@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c4c06e9a.css",
+    "main.js": "/static/js/main.2758ab6f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/react.png": "/static/media/react.8a6fc0a24a800d1e0f4a.png",
+    "static/media/portfolio.jpg": "/static/media/portfolio.8a87830281bffcab5859.jpg",
+    "static/media/modal-window.jpg": "/static/media/modal-window.05f40cd074c88a9bd4a7.jpg",
+    "static/media/scrum.png": "/static/media/scrum.b3c32aef9c3803ba68d5.png",
+    "static/media/guess-my-number.jpg": "/static/media/guess-my-number.742606bc9fe85348abae.jpg",
+    "static/media/jueguitos.jpg": "/static/media/jueguitos.8f0503207347a4534a9c.jpg",
+    "static/media/pig-game.jpg": "/static/media/pig-game.573708c9841d921d14fc.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.ab7644f18965cdeea483.png",
+    "static/media/css.png": "/static/media/css.84de5dab5fab27f4161c.png",
+    "static/media/mysql.png": "/static/media/mysql.7d8d571e5629923eaf74.png",
+    "static/media/java.png": "/static/media/java.f5dd86c3ef6ef3f85acf.png",
+    "static/media/nodejs.png": "/static/media/nodejs.8e341cc00e4ec40c6a27.png",
+    "static/media/angular.png": "/static/media/angular.ebea27093b0c414c2e63.png",
+    "static/media/expressjs.png": "/static/media/expressjs.e3d4f9e5c8b469e45838.png",
+    "static/media/instagram.png": "/static/media/instagram.7040ae567f196e27572b.png",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.2abd2d693e882a949b76df3ebda92f74.svg",
+    "static/media/spring.svg": "/static/media/spring.06648761f888d95c060a68377ffd04e8.svg",
+    "index.html": "/index.html",
+    "main.c4c06e9a.css.map": "/static/css/main.c4c06e9a.css.map",
+    "main.2758ab6f.js.map": "/static/js/main.2758ab6f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4c06e9a.css",
+    "static/js/main.2758ab6f.js"
+  ]
+}

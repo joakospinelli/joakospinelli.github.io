@@ -1,1 +1,0 @@
-Portfolio personal hecho con React, porque es más fácil y me quedó más lindo que el que hice para Arg Programa
