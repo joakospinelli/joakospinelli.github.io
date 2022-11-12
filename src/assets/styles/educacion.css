@@ -1,0 +1,10 @@
+.col-ed {
+    border: var(--main-color) 1px solid;
+    margin: 1%;
+  }
+  
+  .p-detail {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+  

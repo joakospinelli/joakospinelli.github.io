@@ -1,0 +1,28 @@
+.logo-contacto {
+    width: 50%;
+    filter: invert();
+    padding-bottom: 10%;
+}
+  
+.logo-contacto:hover {
+    transform: scale(110%);
+    transition: transform .5s;
+}
+
+.logo-contacto:active {
+    transform: translateZ(-100px);
+}
+
+
+.col-contacto {
+    opacity: 0;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+    animation: fade 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;  
+}
+  
+  
