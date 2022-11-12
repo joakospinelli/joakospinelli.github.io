@@ -24,20 +24,20 @@ let ListaProyectos = [
                              Es un juego en el que hay que adivinar un número generado aleatoriamente, con 20 intentos posibles y dando una pista por cada intento fallido.`,
                              [ 'JavaScript', 'HTML', 'CSS' ],
                              GuessMyNumber,
-                             'https://github.com/joakospinelli/guessMyNumber'),
+                             'https://github.com/joakospinelli/guessMyNumber', 'https://joakospinelli.github.io/guessMyNumber/'),
                 new Proyecto('Modal Window',
                              `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
                              Pruebas de JavaScript para modificar el DOM, usando eventos para activar y desactivar ventanas, modificando sus clases con CSS.`,
                              [ 'JavaScript', 'HTML', 'CSS' ],
                              ModalWindow,
-                             'https://github.com/joakospinelli/modalWindow'),
+                             'https://github.com/joakospinelli/modalWindow', 'https://joakospinelli.github.io/modalWindow/'),
                 new Proyecto('Pig Game',
                              `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
                              Es un juego para dos jugadores en el que cada jugador tira un dado y suma puntos.
-                             Gana el primero en llegar a 100 puntos.`,
+                             Gana el primero en llegar a 100 puntos. (Por algún motivo misterioso se lagea demasiado cuando lo abrís)`,
                              [ 'JavaScript', 'HTML', 'CSS' ],
                              PigGame,
-                             'https://github.com/joakospinelli/pigGame')
+                             'https://github.com/joakospinelli/pigGame', 'https://joakospinelli.github.io/pigGame/')
 ]
 
 export default ListaProyectos;
