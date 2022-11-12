@@ -19,12 +19,11 @@ export default function Presentacion(){
             <p>
                 Empecé a programar en 2019, cuando hice un curso de programación que dieron en la facultad para estudiantes de secundaria,
                 y ahí decidí que iba a estudiar esto. Me interesa la programación orientada a objetos
-                y el desarrollo Web (tanto frontend como backend).
+                y el desarrollo Web (tanto Frontend como Backend).
             </p>
 
             <p style={{ borderBottom: '#FF3164 solid 1px', paddingBottom: '7%'}}>
                 Cuando no estoy estudiando me gusta dormir, jugar en la PC y dibujar. Soy un entusiasta fundamentalista del tereré, 24/7 todo el año.
-                El esquema de color de esta página tiene un mensaje oculto.
             </p>
         </div>
     )

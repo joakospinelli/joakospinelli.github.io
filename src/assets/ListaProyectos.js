@@ -34,7 +34,7 @@ let ListaProyectos = [
                 new Proyecto('Pig Game',
                              `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
                              Es un juego para dos jugadores en el que cada jugador tira un dado y suma puntos.
-                             Gana el primero en llegar a 100 puntos. (Por algún motivo misterioso se lagea demasiado cuando lo abrís)`,
+                             Gana el primero en llegar a 100 puntos (por algún motivo misterioso se lagea demasiado cuando lo abrís).`,
                              [ 'JavaScript', 'HTML', 'CSS' ],
                              PigGame,
                              'https://github.com/joakospinelli/pigGame', 'https://joakospinelli.github.io/pigGame/')
