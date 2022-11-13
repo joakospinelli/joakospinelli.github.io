@@ -6,8 +6,9 @@ import '../assets/styles/header.css';
 
 export default function Header(){
 
+    const nombreNuevo = 'Joaquín Spinelli';
+
     function createName(){
-        let nombreNuevo = 'Joaquín Spinelli';
         let nombreAct = [];
 
         for (let i=0;i < nombreNuevo.length;i++){
@@ -23,6 +24,24 @@ export default function Header(){
 
         }
     }
+
+    function deleteName(){
+
+        let nombreAct = nombre.split('');
+
+        for (let i = nombreAct.length; i > 0; i--){
+
+            setTimeout(() => {
+                nombreAct.pop();
+
+                if (nombreAct.length === 0) {
+                    setNombre('&#x200B;');
+                    createName();
+                } else setNombre(nombreAct.join(''));
+            }, 70 * i);
+        }
+    }
+    
     const [ nombre, setNombre ] = useState('');
 
     window.addEventListener('load', createName)
@@ -30,7 +49,7 @@ export default function Header(){
     return (
         <header className="header">
             <div className="text-header">
-                <h1 onClick={ createName }>
+                <h1 onClick={ deleteName }>
                     {nombre}
                 </h1>
                 <p>
