@@ -10,7 +10,7 @@ export default function ProyectoItem(){
     const item = useOutletContext();
 
     return (
-        <Col className="col-info" style={{ borderBottom: '#ff3164 1px solid', paddingBottom: '5%' }}>
+        <Col className="col-info last-item">
             <h4 className="subtitle-accent">
                 {item.nombre.toUpperCase()}
             </h4>

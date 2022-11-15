@@ -20,16 +20,16 @@ function App() {
       <Router>
         <Header></Header>
         <Routes>
-          <Route exact path="/" element={ <SobreMi/> }>
-            <Route exact path="/" element={ <Presentacion/> }></Route>
+          <Route exact path="" element={ <SobreMi/> }>
+            <Route exact path="" element={ <Presentacion/> }></Route>
             <Route path="competencias" element={ <Competencias/> }></Route>
           </Route>
-          <Route path='educacion' element={ <Educacion/> }></Route>
-          <Route path='proyectos' element={ <Proyectos/> }>
+          <Route path="educacion" element={ <Educacion/> }></Route>
+          <Route path="proyectos" element={ <Proyectos/> }>
             <Route exact path="" element={ <Navigate replace to="0"/> }/>
             <Route path=":proyectoId" element={ <ProyectoItem/> }></Route>
           </Route>
-          <Route path='contacto' element={ <Contacto/>}></Route>
+          <Route path="contacto" element={ <Contacto/>}></Route>
         </Routes>
       </Router>
     </div>

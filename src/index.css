@@ -115,3 +115,8 @@ border-color: white;
 
   box-shadow: 0 0 2px 2px var(--main-color);
 }
+
+.last-item {
+  border-bottom: var(--accent-color) solid 1px;
+  padding-bottom: 7%;
+}

@@ -1,5 +1,4 @@
 import Nav from 'react-bootstrap/Nav';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../assets/styles/header.css';
@@ -10,6 +9,7 @@ export default function Header(){
 
     function createName(){
         let nombreAct = [];
+        const nombre = document.getElementById('nombre');
 
         for (let i=0;i < nombreNuevo.length;i++){
 
@@ -19,7 +19,7 @@ export default function Header(){
                 if (i < (nombreNuevo.length - 1))
                     nombreAct[i + 1] = '_';
                 
-                setNombre(nombreAct.join(''));
+                nombre.textContent = nombreAct.join('');
             }, 70 * i)
 
         }
@@ -27,7 +27,8 @@ export default function Header(){
 
     function deleteName(){
 
-        let nombreAct = nombre.split('');
+    const nombre = document.getElementById('nombre');
+        let nombreAct = nombre.textContent.split('');
 
         for (let i = nombreAct.length; i > 0; i--){
 
@@ -35,31 +36,36 @@ export default function Header(){
                 nombreAct.pop();
 
                 if (nombreAct.length === 0) {
-                    setNombre('&#x200B;');
+                    nombre.textContent = '&#x200B;';
                     createName();
-                } else setNombre(nombreAct.join(''));
+                } else nombre.textContent = nombreAct.join('');
             }, 70 * i);
         }
     }
-    
-    const [ nombre, setNombre ] = useState('');
 
-    window.addEventListener('load', createName)
+    window.addEventListener('load', deleteName)
+
+    const setActive = (e) => {
+        if (!e.target.classList.contains('nb-link')) return;
+
+        document.querySelectorAll('.nb-link').forEach(nl => nl.classList.remove('nb-link-active'));
+        e.target.closest('.nb-link').classList.add('nb-link-active');
+    }
 
     return (
         <header className="header">
             <div className="text-header">
                 <h1 onClick={ deleteName }>
-                    {nombre}
+                    <span id="nombre">Joaquín Spinelli</span>
                 </h1>
                 <p>
                     desarrollador web?
                 </p>
             </div>
 
-            <Nav fill className="navbar">
+            <Nav fill className="navbar" onClick={e => setActive(e)}>
                 <Nav.Item>
-                    <Link to="/"><span className="nb-link">Sobre mí</span></Link>
+                    <Link to="/"><span className="nb-link nb-link-active">Sobre mí</span></Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Link to="/proyectos"><span className="nb-link">Proyectos</span></Link>
