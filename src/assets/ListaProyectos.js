@@ -13,12 +13,6 @@ let ListaProyectos = [
                   [ 'React', 'JavaScript', 'HTML', 'CSS', 'Bootstrap' ],
                   PokeAPI,
                   'https://github.com/joakospinelli/PokeAPI', 'https://joakospinelli.github.io/PokeAPI/'),
-    new Proyecto('Portfolio',
-                 `Proyecto final para "Argentina Programa: Yo programo". Portfolio personal que puede editarse desde el navegador iniciando sesión.
-                 El cliente Web está hostado en Firebase, y el servidor está en Heroku.`,
-                 [ 'Angular', 'TypeScript', 'CSS', 'HTML', 'Bootstrap', 'Spring Web', 'Spring Data JPA', 'Java', 'MySQL', 'JWT' ],
-                 Portfolio,
-                 'http://github.com/joakospinelli/Portfolio-ArgPrograma', 'https://jspinelli-portfolio.web.app'),
     new Proyecto('Guess my Number',
                   `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
                   Es un juego en el que hay que adivinar un número generado aleatoriamente, con 20 intentos posibles y dando una pista por cada intento fallido.`,
