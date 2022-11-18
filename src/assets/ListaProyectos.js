@@ -3,9 +3,9 @@ import Proyecto from '../model/Proyecto';
 import GuessMyNumber from './proyectos/guess-my-number.jpg';
 import ModalWindow from './proyectos/modal-window.jpg';
 import PigGame from './proyectos/pig-game.jpg';
-import Portfolio from './proyectos/portfolio.jpg';
 import Jueguitos from './proyectos/jueguitos.jpg';
 import PokeAPI from './proyectos/pokeapi.jpg';
+import Bankist from './proyectos/bankist.jpg';
 
 let ListaProyectos = [
     new Proyecto('PokéAPI',
@@ -32,6 +32,13 @@ let ListaProyectos = [
                   [ 'JavaScript', 'HTML', 'CSS' ],
                   PigGame,
                   'https://github.com/joakospinelli/pigGame', 'https://joakospinelli.github.io/pigGame/'),
+    new Proyecto('Bankist',
+                  `Página Web que simula el funcionamiento de un sistema de Home Banking. El sistema funciona a través de eventos,
+                  comprobaciones, timers y operaciones sobre arreglos y fechas.
+                  Los elementos se modifican dinámicamente según los resultados de las operaciones que realice el usuario.`,
+                  [ 'JavaScript', 'HTML', 'CSS' ],
+                  Bankist,
+                  'https://github.com/joakospinelli/Bankist', 'https://joakospinelli.github.io/Bankist/'),
     new Proyecto('Jueguitos',
                   `Proyecto final para la materia "Seminario de Lenguajes (JavaScript)" de Licenciatura en Sistemas.
                   Son 3 juegos: "Ahorcado" para jugar solo, y "Piedra, papel, tijera, lagarto, Spock" o "Ta-te-tí" para jugar de a 2 jugadores.`,
