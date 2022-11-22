@@ -6,6 +6,7 @@ import PigGame from './proyectos/pig-game.jpg';
 import Jueguitos from './proyectos/jueguitos.jpg';
 import PokeAPI from './proyectos/pokeapi.jpg';
 import Bankist from './proyectos/bankist.jpg';
+import Forkify from './proyectos/forkify.jpg';
 
 let ListaProyectos = [
     new Proyecto('PokéAPI',
@@ -33,12 +34,21 @@ let ListaProyectos = [
                   PigGame,
                   'https://github.com/joakospinelli/pigGame', 'https://joakospinelli.github.io/pigGame/'),
     new Proyecto('Bankist',
-                  `Página Web que simula el funcionamiento de un sistema de Home Banking. El sistema funciona a través de eventos,
+                  `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
+                  Página Web que simula el funcionamiento de un sistema de Home Banking. El sistema funciona a través de eventos,
                   comprobaciones, timers y operaciones sobre arreglos y fechas.
                   Los elementos se modifican dinámicamente según los resultados de las operaciones que realice el usuario.`,
                   [ 'JavaScript', 'HTML', 'CSS' ],
                   Bankist,
                   'https://github.com/joakospinelli/Bankist', 'https://joakospinelli.github.io/Bankist/'),
+    new Proyecto('Forkify',
+                `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
+                Página Web para buscar recetas online. Permite buscar recetas por el nombre, agregar recetas propias, guardarlas en favoritos
+                y cambiar la cantidad de ingredientes para hacer la cantidad de porciones deseada.
+                Las búsquedas funcionan por los nombres de los platos en inglés.`,
+                [ 'JavaScript', 'HTML', 'CSS', 'NPM' ],
+                Forkify,
+                'https://github.com/joakospinelli/Forkify', 'https://forkify-jspinelli.netlify.app/'),
     new Proyecto('Jueguitos',
                   `Proyecto final para la materia "Seminario de Lenguajes (JavaScript)" de Licenciatura en Sistemas.
                   Son 3 juegos: "Ahorcado" para jugar solo, y "Piedra, papel, tijera, lagarto, Spock" o "Ta-te-tí" para jugar de a 2 jugadores.`,
