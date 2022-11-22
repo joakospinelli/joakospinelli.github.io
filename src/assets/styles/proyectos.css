@@ -11,3 +11,9 @@
   transform: scale(1.2);
   transition: transform .3s;
 }
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+}

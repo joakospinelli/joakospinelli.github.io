@@ -52,7 +52,7 @@ let ListaProyectos = [
     new Proyecto('Jueguitos',
                   `Proyecto final para la materia "Seminario de Lenguajes (JavaScript)" de Licenciatura en Sistemas.
                   Son 3 juegos: "Ahorcado" para jugar solo, y "Piedra, papel, tijera, lagarto, Spock" o "Ta-te-tí" para jugar de a 2 jugadores.`,
-                  [ 'JavaScript', 'Express.JS', 'Node.JS', 'HTML', 'CSS' ],
+                  [ 'JavaScript', 'Express.JS', 'Node.JS', 'HTML', 'CSS', 'Bootstrap' ],
                   Jueguitos,
                   'https://github.com/joakospinelli/jueguitos')
 ]

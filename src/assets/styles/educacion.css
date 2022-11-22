@@ -8,3 +8,11 @@
     opacity: 0.6;
   }
   
+  .ed-link {
+    color: var(--main-color);
+    font-size: 16px;
+  }
+  
+  .ed-link:hover {
+    text-decoration: underline;
+  }

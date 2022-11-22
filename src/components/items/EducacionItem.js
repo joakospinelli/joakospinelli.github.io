@@ -24,8 +24,9 @@ export default function EducacionItem(props){
                 {formatDate(item.fechaInicio)} - {item.terminado ? formatDate(item.fechaFin) : 'En curso'}
                 </p>
             <ul>
-                { item.promedio ? <li>Promedio: {item.promedio}.</li> : <></> }
-                <li>{item.descripcion}</li>
+                { item.promedio ? <li>Promedio: {item.promedio}</li> : <></> }
+                { item.descripcion ? <li>{item.descripcion}</li> : <></> }
+                { item.certificado ? <li>Certificado: <a className="ed-link" target="_blank" rel="noreferrer noopener" href={item.certificado}>click acá.</a></li> : <></> }
             </ul>
         </Col>
     )

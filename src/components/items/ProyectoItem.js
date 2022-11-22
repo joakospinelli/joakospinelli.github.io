@@ -29,7 +29,7 @@ export default function ProyectoItem(){
                 TECNOLOGÍAS UTILIZADAS
             </p>
 
-            <ul>
+            <ul className="tecnologias">
                 {item.tecnologias.map((tec, i) => {
                     return <li key={i}>
                         {tec}
