@@ -6,11 +6,12 @@ import PigGame from './proyectos/pig-game.jpg';
 import Jueguitos from './proyectos/jueguitos.jpg';
 import PokeAPI from './proyectos/pokeapi.jpg';
 import Bankist from './proyectos/bankist.jpg';
+import Mapty from './proyectos/mapty.jpg';
 import Forkify from './proyectos/forkify.jpg';
 
 let ListaProyectos = [
     new Proyecto('PokéAPI',
-                  `Página web que muestra información de todos los Pokemon, usando la API de 'pokeapi.co'.`,
+                  `Página web que muestra información de todos los Pokemon a través de la API "pokeapi.co".`,
                   [ 'React', 'JavaScript', 'HTML', 'CSS', 'Bootstrap' ],
                   PokeAPI,
                   'https://github.com/joakospinelli/PokeAPI', 'https://joakospinelli.github.io/PokeAPI/'),
@@ -41,6 +42,14 @@ let ListaProyectos = [
                   [ 'JavaScript', 'HTML', 'CSS' ],
                   Bankist,
                   'https://github.com/joakospinelli/Bankist', 'https://joakospinelli.github.io/Bankist/'),
+    new Proyecto('Mapty',
+                  `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
+                  Página Web en la que se pueden marcar distintos puntos de interés interactuando con un mapa, a través de la
+                  geolocalización del dispositivo. Permite asignarle datos personalizados a cada punto, y muestra el clima
+                  del lugar a través de la API pública "open-meteo.com".`,
+                  [ 'JavaScript', 'HTML', 'CSS', 'Leaflet' ],
+                  Mapty,
+                  'https://github.com/joakospinelli/Mapty', 'https://joakospinelli.github.io/Mapty'),
     new Proyecto('Forkify',
                 `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
                 Página Web para buscar recetas online. Permite buscar recetas por el nombre, agregar recetas propias, guardarlas en favoritos
