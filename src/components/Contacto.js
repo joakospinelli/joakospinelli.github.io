@@ -9,9 +9,9 @@ import ListaContacto from '../assets/ListaContacto';
 export default function Contacto(){
 
     return (
-        <Container style={{ padding: '5%' }}>
+        <Container style={{ padding: '5%'}}>
             <Row className="justify-content-md-center">
-                <div style={{textAlign: 'center'}} className="col-menu">
+                <div style={{textAlign: 'center'}} className="col-menu-contacto">
                     <h2 className="subtitle-accent">REDES Y CONTACTO</h2>
                 </div>
                 <Col>

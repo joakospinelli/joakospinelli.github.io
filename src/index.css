@@ -58,7 +58,6 @@ li {
 li a {
   text-decoration: none;
   color: white;
-  font-size: 24px;
 }
 
 li a:hover {
@@ -70,6 +69,7 @@ li a:hover {
   animation: fade ease 0.9s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  margin-bottom: 10%;
 }
 
 .col-info {
@@ -119,4 +119,33 @@ border-color: white;
 .last-item {
   border-bottom: var(--accent-color) solid 1px;
   padding-bottom: 7%;
+}
+
+@keyframes glow {
+  0% {
+      opacity: .4;
+  } 60% {
+      opacity: 1;
+  } 75%{
+    opacity: 1;
+  }100% {
+      opacity: .4;
+  }
+}
+
+.detail {
+  float: right;
+  animation: glow ease 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  opacity: .6;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  margin: 5%;
+}
+
+.detail:hover {
+  color: var(--accent-color);
 }

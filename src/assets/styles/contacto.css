@@ -13,6 +13,11 @@
     transform: translateZ(-100px);
 }
 
+.col-menu-contacto {
+    animation: fade ease 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
 .col-contacto {
     opacity: 0;

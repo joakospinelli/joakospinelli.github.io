@@ -10,4 +10,11 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;  
 }
+
+.img {
+    border-radius: 50%;
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
+}
   
