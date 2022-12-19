@@ -1,7 +1,9 @@
 :root {
-  --bg-color: #343434;
+  --bg-color: #434343;
+  --bg-color-2: #212121;
   --accent-color: #ff3164;
   --main-color: #9ef1ec;
+  --main-color-2: #55ebff;
 }
 
 @keyframes fade {
@@ -22,8 +24,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-color: var(--bg-color);
-    color: white;
+  background-color: var(--bg-color-1);
+  background-image: linear-gradient(to bottom right, var(--bg-color), var(--bg-color-2));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
 }
 
 code {
@@ -62,6 +68,10 @@ li a {
 
 li a:hover {
   color: var(--main-color);
+}
+
+li a:active {
+  color: var(--main-color-2);
 }
 
 
