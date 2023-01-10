@@ -1,4 +1,6 @@
+import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
 import '../assets/styles/header.css';
@@ -46,10 +48,10 @@ export default function Header(){
     window.addEventListener('load', deleteName)
 
     const setActive = (e) => {
-        if (!e.target.classList.contains('nb-link')) return;
+        if (!e.target.classList.contains('nav-link')) return;
 
-        document.querySelectorAll('.nb-link').forEach(nl => nl.classList.remove('nb-link-active'));
-        e.target.closest('.nb-link').classList.add('nb-link-active');
+        document.querySelectorAll('.nav-link').forEach(nl => nl.classList.remove('nb-link-active'));
+        e.target.closest('.nav-link').classList.add('nb-link-active');
     }
 
     return (
@@ -63,20 +65,17 @@ export default function Header(){
                 </p>
             </div>
 
-            <Nav fill className="navbar" onClick={e => setActive(e)}>
-                <Nav.Item>
-                    <Link to="/"><span className="nb-link nb-link-active">Sobre mí</span></Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Link to="/proyectos"><span className="nb-link">Proyectos</span></Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Link to="/educacion"><span className="nb-link">Educación</span></Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Link to="/contacto"><span className="nb-link">Contacto</span></Link>
-                </Nav.Item>
-            </Nav>
+            <Navbar bg="none" expand="md" onClick={e => setActive(e)}>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="m-auto">
+                            <Nav.Link as={Link} to="/">Sobre mí</Nav.Link>
+                            <Nav.Link as={Link} to="/proyectos">Proyectos</Nav.Link>
+                            <Nav.Link as={Link} to="/educacion">Educación</Nav.Link>
+                            <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+            </Navbar>
         </header>
     )
 }

@@ -1,8 +1,8 @@
 .header {
   background-image: linear-gradient(to right, var(--main-color), var(--main-color-2));
   font-family: 'Roboto Mono', monospace;
-  align-items: center;
   box-shadow: 0px 10px 40px #121212;
+  text-align: center;
 }
 
 .icono {
@@ -31,7 +31,11 @@
   color: var(--accent-color);
 }
 
+.header-nb {
+  background-color: var(--accent-color);
+}
+
 .nb-link-active {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
   border-bottom: var(--accent-color) 2px solid;
 }

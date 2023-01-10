@@ -159,3 +159,46 @@ border-color: white;
 .detail:hover {
   color: var(--accent-color);
 }
+
+.nb-link-active {
+  color: var(--accent-color);
+  border-bottom: var(--accent-color) 2px solid;
+}
+
+@media (max-width: 1000px) {
+  .col-menu {
+    width: 40%;
+  }
+
+  .col-ed {
+    width: 100%;
+  }
+
+  .form-select {
+    display: inline-flex;
+  }
+
+  .col-competencia {
+    width: 33%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-menu {
+    width: 100%;
+  }
+
+  .proyecto-img {
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .col-menu .subtitle-main {
+    text-decoration: underline;
+  }
+}
