@@ -37,7 +37,7 @@ export default function Presentacion(){
             </p>
 
             <p>
-                Me gustan los perros, dibujar y comer. Soy un entusiasta fundamentalista del tereré, 24/7 todo el año.
+                Me gustan los perros, los juegos y dibujar. Soy un entusiasta fundamentalista del tereré, 24/7 todo el año.
             </p>
 
             <div style={{ textAlign: 'center '}} onMouseEnter={changeImg}>

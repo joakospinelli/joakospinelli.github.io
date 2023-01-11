@@ -1,4 +1,3 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
@@ -38,7 +37,7 @@ export default function Header(){
                 nombreAct.pop();
 
                 if (nombreAct.length === 0) {
-                    nombre.textContent = '&#x200B;';
+                    nombre.textContent = '_';
                     createName();
                 } else nombre.textContent = nombreAct.join('');
             }, 70 * i);
@@ -60,16 +59,14 @@ export default function Header(){
                 <h1 onClick={ deleteName }>
                     <span id="nombre">Joaquín Spinelli</span>
                 </h1>
-                <p>
-                    desarrollador web?
-                </p>
+                <p>&lt;desarrollador web/&gt;</p>
             </div>
 
             <Navbar bg="none" expand="md" onClick={e => setActive(e)}>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
-                            <Nav.Link as={Link} to="/">Sobre mí</Nav.Link>
+                            <Nav.Link as={Link} className="nb-link-active" to="/">Sobre mí</Nav.Link>
                             <Nav.Link as={Link} to="/proyectos">Proyectos</Nav.Link>
                             <Nav.Link as={Link} to="/educacion">Educación</Nav.Link>
                             <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
