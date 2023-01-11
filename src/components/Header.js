@@ -59,7 +59,7 @@ export default function Header(){
                 <h1 onClick={ deleteName }>
                     <span id="nombre">Joaquín Spinelli</span>
                 </h1>
-                <p>&lt;desarrollador web/&gt;</p>
+                <p>&lt;desarrollador Web/&gt;</p>
             </div>
 
             <Navbar bg="none" expand="md" onClick={e => setActive(e)}>
