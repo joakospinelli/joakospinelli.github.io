@@ -37,6 +37,11 @@ code {
     monospace;
 }
 
+.App {
+  background-image: linear-gradient(to bottom right, var(--bg-color), var(--bg-color-2));
+  height: 100vh;
+}
+
 .subtitle-main {
   color: var(--main-color);
   margin-bottom: 3%;
