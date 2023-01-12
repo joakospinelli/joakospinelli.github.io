@@ -5,8 +5,14 @@ import Col from 'react-bootstrap/Col';
 import EducacionItem from './items/EducacionItem';
 
 import ListaEducacion from '../assets/ListaEducacion';
+import { useEffect } from 'react';
+import { setActiveItem } from '../util/setNavbar';
 
 export default function Educacion(){
+
+    useEffect(() => {
+        setActiveItem('educacion');
+    },[]);
 
     return(
         <Container style={{ padding: '5%' }}>

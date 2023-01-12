@@ -2,12 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { useEffect } from 'react';
 import '../assets/styles/contacto.css';
 
 import ListaContacto from '../assets/ListaContacto';
-
+import { setActiveItem } from '../util/setNavbar';
 export default function Contacto(){
 
+    useEffect(() => {
+        setActiveItem('contacto');
+    },[]);
+    
     return (
         <Container style={{ padding: '5%'}}>
             <Row className="justify-content-md-center">

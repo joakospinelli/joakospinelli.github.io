@@ -6,7 +6,7 @@ export default function Presentacion(){
         return Math.abs(edad.getUTCFullYear() - 1970);
     }
 
-    const changeImg = () => {
+/*     const changeImg = () => {
         const randomImg = [ "https://media.tenor.com/kB-Liucd8p4AAAAC/pepega-hackermans.gif",
                             "https://media.tenor.com/Z4Ks69TQz0wAAAAC/hacker-pepe.gif",
                             "https://media.tenor.com/ZmZ7UKIc0soAAAAC/anonymous-anonymous-bites-back.gif" ];
@@ -19,7 +19,7 @@ export default function Presentacion(){
             selected = randomImg[ Math.floor(Math.random() * randomImg.length) ];
 
         img.src = selected;
-    }
+    } */
 
     return (
         <div className="col-info last-item">
@@ -40,12 +40,13 @@ export default function Presentacion(){
                 Me gustan los perros, los juegos y dibujar. Soy un entusiasta fundamentalista del tereré, 24/7 todo el año.
             </p>
 
-            <div style={{ textAlign: 'center '}} onMouseEnter={changeImg}>
+{           // esto lo voy a volver a poner cuando tenga fotos decentes
+/*             <div style={{ textAlign: 'center '}} onMouseEnter={changeImg}>
                 <img src="https://media.tenor.com/ZmZ7UKIc0soAAAAC/anonymous-anonymous-bites-back.gif"
                             alt="rana con anteojos"
                             id="img-perfil"
                             className="img"></img>
-            </div>
+            </div> */}
 
         </div>
     )

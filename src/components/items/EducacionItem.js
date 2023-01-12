@@ -1,16 +1,11 @@
 import Col from 'react-bootstrap/Col';
 
 import '../../assets/styles/educacion.css';
+import { formatDateDDMMYY } from '../../util/dateFormatter';
 
 export default function EducacionItem(props){
 
     const item = props.item;
-
-    const formatDate = (date) => {
-        let newDate = [ ...date.toISOString().split("T")[0].split("-") ];
-        newDate = [ newDate[2], newDate[1], newDate[0] ];
-        return newDate.join("/");
-    }
 
     return (
         <Col className="col-ed" md="5">
@@ -21,7 +16,7 @@ export default function EducacionItem(props){
             <p>{item.institucion} - {item.tipo}.</p>
 
             <p className="p-detail">
-                {formatDate(item.fechaInicio)} - {item.terminado ? formatDate(item.fechaFin) : 'En curso'}
+                {formatDateDDMMYY(item.fechaInicio)} - {item.terminado ? formatDateDDMMYY(item.fechaFin) : 'En curso'}
                 </p>
             <ul>
                 { item.promedio ? <li>Promedio: {item.promedio}</li> : <></> }

@@ -2,9 +2,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { useEffect } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
+import { setActiveItem } from '../util/setNavbar';
+
 export default function SobreMi(){
+
+    useEffect(() => {
+        setActiveItem('sobre-mi');
+    },[]);
 
     return (
         <Container style={{ padding: '5%' }}>

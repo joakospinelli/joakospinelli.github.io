@@ -5,10 +5,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Outlet, Link, useParams } from 'react-router-dom';
 
 import ListaProyectos from '../assets/ListaProyectos';
+import { setActiveItem } from '../util/setNavbar';
 
 export default function Proyectos(){
 
@@ -36,6 +37,10 @@ export default function Proyectos(){
         
         setProyectos(listaOriginal.filter(i => i.tecnologias.includes(select.value)));
     }
+
+    useEffect(() => {
+        setActiveItem('proyectos');
+    }, []);
 
     return (
         <Container style={{ padding: '5%' }}>

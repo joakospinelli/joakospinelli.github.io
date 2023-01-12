@@ -46,13 +46,6 @@ export default function Header(){
 
     window.addEventListener('load', deleteName)
 
-    const setActive = (e) => {
-        if (!e.target.classList.contains('nav-link')) return;
-
-        document.querySelectorAll('.nav-link').forEach(nl => nl.classList.remove('nb-link-active'));
-        e.target.closest('.nav-link').classList.add('nb-link-active');
-    }
-
     return (
         <header className="header">
             <div className="text-header">
@@ -62,14 +55,14 @@ export default function Header(){
                 <p>&lt;desarrollador Web/&gt;</p>
             </div>
 
-            <Navbar bg="none" expand="md" onClick={e => setActive(e)}>
+            <Navbar bg="none" expand="md">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="m-auto">
-                            <Nav.Link as={Link} className="nb-link-active" to="/">Sobre mí</Nav.Link>
-                            <Nav.Link as={Link} to="/proyectos">Proyectos</Nav.Link>
-                            <Nav.Link as={Link} to="/educacion">Educación</Nav.Link>
-                            <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
+                        <Nav fill className="m-auto">
+                            <Nav.Link as={Link} to="/" id="sobre-mi">Sobre mí</Nav.Link>
+                            <Nav.Link as={Link} to="/proyectos" id="proyectos">Proyectos</Nav.Link>
+                            <Nav.Link as={Link} to="/educacion" id="educacion">Educación</Nav.Link>
+                            <Nav.Link as={Link} to="/contacto" id="contacto">Contacto</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
             </Navbar>
