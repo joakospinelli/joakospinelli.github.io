@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5632a6b4.css",
-    "main.js": "/static/js/main.79d72de9.js",
+    "main.css": "/static/css/main.dc372742.css",
+    "main.js": "/static/js/main.20c33b45.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/react.png": "/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/mapty.jpg": "/static/media/mapty.defd12ac59950f0bfd66.jpg",
@@ -13,6 +13,7 @@
     "static/media/guess-my-number.jpg": "/static/media/guess-my-number.742606bc9fe85348abae.jpg",
     "static/media/jueguitos.jpg": "/static/media/jueguitos.8f0503207347a4534a9c.jpg",
     "static/media/pig-game.jpg": "/static/media/pig-game.573708c9841d921d14fc.jpg",
+    "static/media/timer-pomodoro.jpg": "/static/media/timer-pomodoro.b296853374295bca3054.jpg",
     "static/media/linkedin.png": "/static/media/linkedin.ab7644f18965cdeea483.png",
     "static/media/mongodb.png": "/static/media/mongodb.c20e1bc7e958c8db307f.png",
     "static/media/css.png": "/static/media/css.84de5dab5fab27f4161c.png",
@@ -25,12 +26,12 @@
     "static/media/bootstrap.svg": "/static/media/bootstrap.2abd2d693e882a949b76df3ebda92f74.svg",
     "static/media/spring.svg": "/static/media/spring.06648761f888d95c060a68377ffd04e8.svg",
     "index.html": "/index.html",
-    "main.5632a6b4.css.map": "/static/css/main.5632a6b4.css.map",
-    "main.79d72de9.js.map": "/static/js/main.79d72de9.js.map",
+    "main.dc372742.css.map": "/static/css/main.dc372742.css.map",
+    "main.20c33b45.js.map": "/static/js/main.20c33b45.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5632a6b4.css",
-    "static/js/main.79d72de9.js"
+    "static/css/main.dc372742.css",
+    "static/js/main.20c33b45.js"
   ]
 }
