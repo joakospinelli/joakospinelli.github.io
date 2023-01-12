@@ -8,6 +8,7 @@ import PokeAPI from './proyectos/pokeapi.jpg';
 import Bankist from './proyectos/bankist.jpg';
 import Mapty from './proyectos/mapty.jpg';
 import Forkify from './proyectos/forkify.jpg';
+import TimerPomodoro from './proyectos/timer-pomodoro.jpg';
 
 let ListaProyectos = [
     new Proyecto('PokéAPI',
@@ -15,6 +16,11 @@ let ListaProyectos = [
                   [ 'React', 'JavaScript', 'HTML', 'CSS', 'Bootstrap' ],
                   PokeAPI,
                   'https://github.com/joakospinelli/PokeAPI', 'https://joakospinelli.github.io/PokeAPI/'),
+    new Proyecto('Timer Pomodoro',
+                  `Aplicación web para gestionar el tiempo usando la técnica Pomodoro. Permite personalizar los cronómetros y elegir la cantidad de intervalos.`,
+                  [ 'React', 'JavaScript', 'HTML', 'CSS', 'Bootstrap' ],
+                  TimerPomodoro,
+                  'https://github.com/joakospinelli/TimerPomodoro', 'https://joakospinelli.github.io/TimerPomodoro/'),
     new Proyecto('Guess my Number',
                   `Proyecto para el curso "The complete JavaScript course 2022" de Udemy.
                   Es un juego en el que hay que adivinar un número generado aleatoriamente, con 20 intentos posibles y dando una pista por cada intento fallido.`,
