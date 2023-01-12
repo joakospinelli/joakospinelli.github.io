@@ -39,6 +39,9 @@ code {
 
 .App {
   background-image: linear-gradient(to bottom right, var(--bg-color), var(--bg-color-2));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
 
