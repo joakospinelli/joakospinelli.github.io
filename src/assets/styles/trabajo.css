@@ -1,0 +1,16 @@
+.trabajo-fecha {
+    float: right;
+}
+
+.trabajo-item {
+    margin-bottom: 10%;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.ul-trabajo {
+    padding-left: 1.5rem;
+}
+
+.li-trabajo {
+    margin-bottom: 1%;
+}

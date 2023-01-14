@@ -61,6 +61,7 @@ export default function Header(){
                         <Nav fill className="m-auto">
                             <Nav.Link as={Link} to="/" id="sobre-mi">Sobre mí</Nav.Link>
                             <Nav.Link as={Link} to="/proyectos" id="proyectos">Proyectos</Nav.Link>
+                            <Nav.Link as={Link} to="/explaboral" id="explaboral">Trabajo</Nav.Link>
                             <Nav.Link as={Link} to="/educacion" id="educacion">Educación</Nav.Link>
                             <Nav.Link as={Link} to="/contacto" id="contacto">Contacto</Nav.Link>
                         </Nav>
