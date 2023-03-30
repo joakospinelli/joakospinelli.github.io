@@ -12,11 +12,14 @@ import ReactLogo from './competencias/react.png';
 import ScrumLogo from './competencias/scrum.png';
 import SpringLogo from './competencias/spring.svg';
 import MongodbLogo from './competencias/mongodb.png';
+import CSharpLogo from './competencias/csharp.png';
+import DotnetLogo from './competencias/dotnet.svg';
 
 import Logo from '../model/LogoCompetencias.js';
 
-let Angular = new Logo(AngularLogo, 'Angular (Básico)');
+let Angular = new Logo(AngularLogo, 'Angular');
 let Bootstrap = new Logo(BootstrapLogo, 'Bootstrap');
+let CSharp = new Logo(CSharpLogo, 'C#');
 let Css = new Logo(CssLogo, 'CSS');
 let Express = new Logo(ExpressLogo, 'Express.JS');
 let Git = new Logo(GitLogo, 'Git');
@@ -28,10 +31,11 @@ let Mysql = new Logo(MysqlLogo, 'MySQL');
 let Scrum = new Logo(ScrumLogo, 'Scrum Agile');
 let Nodejs = new Logo(NodejsLogo, 'Node.JS');
 let React = new Logo(ReactLogo, 'React');
+let Dotnet = new Logo(DotnetLogo, '.NET Core 6 (Básico)');
 let Spring = new Logo(SpringLogo, 'Spring (Básico)');
 
-const listaCompetencias = [ Javascript, Java, Html, Css, Bootstrap, Git, Nodejs, Express, Mysql, Scrum,
-                            MongoDB, React, Angular, Spring ];
+const listaCompetencias = [ Java, CSharp, Javascript, Nodejs, Express, Html, Css, Bootstrap,
+                            React, Angular, Mysql, MongoDB, Git, Scrum, Dotnet, Spring ];
 
 export {
     listaCompetencias
