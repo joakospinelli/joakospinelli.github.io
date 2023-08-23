@@ -2,9 +2,9 @@ import Educacion from '../model/Educacion';
 
 let ListaEducacion = [
     new Educacion('Analista en TIC', 'Universidad Nacional de La Plata', 'Universitario',
-                  7.75, 'Porcentaje de aprobación: 90,91%.', new Date(2020, 0, 27)),
+                  7.71, 'Porcentaje de aprobación: 95,83%.', new Date(2020, 0, 27)),
     new Educacion('Licenciatura en Sistemas', 'Universidad Nacional de La Plata', 'Universitario',
-                  7.75, 'Porcentaje de aprobación: 57,14%.', new Date(2020, 0, 27)), 
+                  7.71, 'Porcentaje de aprobación: 70,27%.', new Date(2020, 0, 27)), 
     new Educacion('Bachiller en Artes Visuales', 'Bachillerato de Bellas Artes', 'Secundario',
                   8.32, 'Especialidad en Grabado, Composición Experimental.',  new Date(2013, 2, 8), new Date(2019, 11, 9)),
                   new Educacion('The Complete JavaScript Course 2023', 'Udemy', 'Curso',
