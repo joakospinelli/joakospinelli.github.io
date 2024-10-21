@@ -1,0 +1,135 @@
+html {
+    font-family: 'Montserrat';
+    background-color: #E2F1E7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main {
+    width: 60%;
+}
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header {
+    border-bottom: 1px solid black;
+    h2 {
+        font-weight: normal;
+    }
+}
+
+article {
+    ul {
+        display: grid;
+        list-style: none;
+        padding-inline-start: 0;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        justify-content: center;
+
+        gap: 1rem;
+
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+figure {
+    margin: 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgb(0,0,0, .4);
+    transition: .1s;
+
+    display: flex;
+    flex-direction: column;
+
+    figcaption {
+        margin: 0;
+        padding: .5rem;
+        text-align: center;
+        
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+
+        h3 {
+            margin: 0;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    img {
+        height: 12rem;
+        object-fit: cover;
+
+        filter: saturate(60%);
+        transition: .2s;
+    }
+}
+
+figure:hover {
+    box-shadow: 0 4px 20px rgb(0,0,0, .6);
+    transform: translateY(-10px);
+    img {
+        opacity: 100;
+        filter: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    float: right;
+
+    p {
+        transition: .1s;
+    }
+}
+
+footer:hover {
+    a {
+        p {
+            transform: translateX(-4px);
+        }
+    }
+}
+
+@media(max-width: 1330px){
+    article {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    main {
+        width: 100%;
+    }
+}

@@ -1,0 +1,220 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+html {
+    font-family: 'Montserrat';
+    background-color: #E2F1E7;
+}
+
+body {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    ul {
+        gap: 2rem;
+        flex-direction: row;
+
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        p {
+            transition: .1s;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        li:hover {
+            p {
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+figure {
+    margin-top: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgb(0,0,0, .4);
+
+    transition: .2s;
+    animation: fade-in 1s;
+    figcaption {
+        margin: 0;
+        padding: .5rem;
+        ul {
+            width: 100%;
+            justify-content: space-evenly;
+
+            li {
+                display: flex;
+            }
+
+            a {
+                margin: 0;
+                display: flex;
+            }
+
+            svg {
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+}
+
+figure:hover {
+    box-shadow: 0 4px 20px rgb(0,0,0, .6);
+}
+
+.img-container {
+    position: relative;
+}
+
+.picture {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+}
+
+.hidden {
+    position: absolute;
+    opacity: 0;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.hidden:hover {
+    opacity: 1;
+}
+
+.lens {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Añade un borde ligero para el lente */
+    width: 100px; /* Tamaño del lente */
+    height: 100px; /* Tamaño del lente */
+    transform: translate(-50%, -50%); /* Centrar el lente en el mouse */
+    mix-blend-mode: multiply; /* Mezclar el lente con la imagen */
+    transition: opacity 0.2s ease;
+    opacity: 0; /* Inicialmente oculto */
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+}
+
+.name {
+    font-family: 'Comic Sans MS';
+}
+
+
+header {
+    
+    a {
+        display: flex;
+        gap: .25rem;
+    }
+
+    h1 {
+        display: inline-block;
+    }
+
+    svg {
+        height: 2.5rem;
+        width: 2.5rem;
+
+        display: inline-block;
+        margin: auto 0;
+    }
+}
+
+.logo {
+    transition: .2s;
+    box-sizing: border-box;
+}
+
+.logo:hover {
+    border-bottom: solid 1px transparent;
+}
+
+#logo-spotify:hover {
+    color: #1DB954;
+    border-bottom-color: #1DB954;
+}
+
+#logo-instagram:hover {
+    color: #DD2A7B;
+    border-bottom-color: #DD2A7B;
+}
+
+#logo-linkedin:hover {
+    color: #0077B5;
+    border-bottom-color: #0077B5;
+}
+
+section img {
+    height: 6rem;
+}
+
+@media(max-width: 800px) {
+    body {
+        flex-direction: column;
+        overflow-x: hidden;
+        text-align: center;
+        gap: .5rem;
+    }
+
+    main {
+        width: 100%;
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            padding: 1rem;
+        }
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    .picture {
+        height: 12rem;
+        width: 12rem;
+    }
+}
