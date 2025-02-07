@@ -27,7 +27,7 @@ main {
 }
 
 header {
-    border-bottom: 1px solid black;
+    margin-bottom: 2.5rem;
     h2 {
         font-weight: normal;
     }
